@@ -38,13 +38,7 @@ def find_a(array)
 end 
 
 def sum_array(array)
-  i = 0 
-  new_array = []
-  while i < array.length 
-  array.each_with_index do |e, i|
-    e + e[i+1]
-    i += 1 
-  end 
-  new_array
-end
+  array.inject do |sum, n|
+    sum + n 
+  end
 end
