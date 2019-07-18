@@ -15,8 +15,8 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  array.sort! do |object, objects|
-    object[2] <=> object[1]
+  array[1], array[2] = array[2], array[1]
+  return array 
   end
 end
 
